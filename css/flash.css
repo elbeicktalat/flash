@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*
 The color system according material.io, for more info visit: 
 https://material.io/design/color/the-color-system.html#color-theme-creation
@@ -51,34 +51,37 @@ if your surface color is red it's meaningless the same color for a content.
   padding: 0.6rem 1.4rem;
   box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
   align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
+
 .button:enabled:hover {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
+
 .button:active {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
+
 .button:focus {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
+
 .button:disabled {
   background-color: #bdbdbd;
   color: text-contrast(#bdbdbd);
 }
+
 .button span {
   margin: 0.2rem;
 }
+
 .button i {
   margin: 0.2rem;
 }
+
 .button::before {
-  content: "";
+  content: '';
   position: absolute;
   padding: 50%;
   border-radius: 50%;
@@ -89,6 +92,7 @@ if your surface color is red it's meaningless the same color for a content.
   opacity: 0;
   transition: transform 0.75s, opacity 0.75s;
 }
+
 .button:active::before {
   transition: 0s;
   opacity: 0.4;
@@ -112,37 +116,41 @@ if your surface color is red it's meaningless the same color for a content.
   padding: 0.6rem 1.4rem;
   box-shadow: none;
   align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
+
 .outlined-button:enabled:hover {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
+
 .outlined-button:active {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
+
 .outlined-button:focus {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
+
 .outlined-button:disabled {
   background-color: #bdbdbd;
   color: text-contrast(#bdbdbd);
 }
+
 .outlined-button span {
   margin: 0.2rem;
 }
+
 .outlined-button i {
   margin: 0.2rem;
 }
+
 .outlined-button:disabled {
   border: none;
 }
+
 .outlined-button::before {
-  content: "";
+  content: '';
   position: absolute;
   padding: 50%;
   border-radius: 50%;
@@ -153,6 +161,7 @@ if your surface color is red it's meaningless the same color for a content.
   opacity: 0;
   transition: transform 0.75s, opacity 0.75s;
 }
+
 .outlined-button:active::before {
   transition: 0s;
   opacity: 0.4;
@@ -176,34 +185,37 @@ if your surface color is red it's meaningless the same color for a content.
   padding: 0.6rem 1.4rem;
   box-shadow: none;
   align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
+
 .text-button:enabled:hover {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
+
 .text-button:active {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
+
 .text-button:focus {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
+
 .text-button:disabled {
   background-color: #bdbdbd;
   color: text-contrast(#bdbdbd);
 }
+
 .text-button span {
   margin: 0.2rem;
 }
+
 .text-button i {
   margin: 0.2rem;
 }
+
 .text-button::before {
-  content: "";
+  content: '';
   position: absolute;
   padding: 50%;
   border-radius: 50%;
@@ -214,8 +226,11 @@ if your surface color is red it's meaningless the same color for a content.
   opacity: 0;
   transition: transform 0.75s, opacity 0.75s;
 }
+
 .text-button:active::before {
   transition: 0s;
   opacity: 0.4;
   transform: translate(-50%, -50%) scale(0);
 }
+
+/*# sourceMappingURL=flash.css.map */
