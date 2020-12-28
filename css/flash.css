@@ -34,8 +34,104 @@ As other On background
 “On” colors are primarily applied to text, iconography, and strokes.
 if your surface color is red it's meaningless the same color for a content.
 */
+.d-block {
+  display: block;
+}
+
+.d-contents {
+  display: contents;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inherit {
+  display: inherit;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-inline-tab {
+  display: inline-table;
+}
+
+.d-list-item {
+  display: list-item;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-tab {
+  display: table;
+}
+
+.d-tab-caption {
+  display: table-caption;
+}
+
+.d-tab-cell {
+  display: table-cell;
+}
+
+.d-tab-col {
+  display: table-column;
+}
+
+.d-tab-col-group {
+  display: table-column-group;
+}
+
+.d-tab-header-group {
+  display: table-header-group;
+}
+
+.d-tab-footer-group {
+  display: table-footer-group;
+}
+
+.d-tab-row {
+  display: table-row;
+}
+
+.d-tab-row-group {
+  display: table-row-group;
+}
+
+.d-webkit-box {
+  display: -webkit-box;
+}
+
+.d-webkit-flex {
+  display: -webkit-flex;
+}
+
+.d-webkit-inline-box {
+  display: -webkit-inline-box;
+}
+
+.d-webkit-inline-flex {
+  display: -webkit-inline-flex;
+}
+
 .button {
-  display: lnline-flex;
+  display: inline-flex;
   position: relative;
   overflow: hidden;
   color: white;
@@ -100,7 +196,7 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .outlined-button {
-  display: lnline-flex;
+  display: inline-flex;
   position: relative;
   overflow: hidden;
   color: #673ab7;
@@ -169,7 +265,7 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .text-button {
-  display: lnline-flex;
+  display: inline-flex;
   position: relative;
   overflow: hidden;
   color: #673ab7;
