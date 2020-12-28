@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@charset "UTF-8";
+/*
+The color system according material.io, for more info visit: 
+https://material.io/design/color/the-color-system.html#color-theme-creation
+Primary color
+A primary color is the color displayed most frequently across your app's screens and components.
+Dark and light primary variants
+Your primary color can be used to make a color theme for your app,
+including dark and light primary color variants.
+On Primery 
+“On” colors are primarily applied to text, iconography, and strokes.
+*/
+/*
+Secondary color
+A secondary color provides more ways to accent and distinguish your product.
+Having a secondary color is optional, and should be applied sparingly to accent...
+Dark and light secondary variants
+Just like the primary color, your secondary color can have dark and light variants.
+A color theme can use your primary color, secondary color, and dark and light variants of each color.
+On secondary 
+“On” colors are primarily applied to text, iconography, and strokes.
+*/
+/*
+The background color appears behind scrollable content.
+On background 
+“On” colors are primarily applied to text, iconography, and strokes.
+if your surface color is red it's meaningless the same color for a content.
+*/
+/*
+Surface colors affect surfaces of components,
+such as cards, sheets, and menus.
+As other On background 
+“On” colors are primarily applied to text, iconography, and strokes.
+if your surface color is red it's meaningless the same color for a content.
+*/
+.button {
+  display: lnline-flex;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background: #673ab7;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.4rem;
+  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.button:enabled:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.button:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.button:disabled {
+  background-color: #bdbdbd;
+  color: text-contrast(#bdbdbd);
+}
+.button span {
+  margin: 0.2rem;
+}
+.button i {
+  margin: 0.2rem;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  padding: 50%;
+  border-radius: 50%;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  transition: transform 0.75s, opacity 0.75s;
+}
+.button:active::before {
+  transition: 0s;
+  opacity: 0.4;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.outlined-button {
+  display: lnline-flex;
+  position: relative;
+  overflow: hidden;
+  color: #673ab7;
+  background: white;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  outline: none;
+  border: solid 0.1rem #673ab7;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.4rem;
+  box-shadow: none;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.outlined-button:enabled:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.outlined-button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.outlined-button:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.outlined-button:disabled {
+  background-color: #bdbdbd;
+  color: text-contrast(#bdbdbd);
+}
+.outlined-button span {
+  margin: 0.2rem;
+}
+.outlined-button i {
+  margin: 0.2rem;
+}
+.outlined-button:disabled {
+  border: none;
+}
+.outlined-button::before {
+  content: "";
+  position: absolute;
+  padding: 50%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  transition: transform 0.75s, opacity 0.75s;
+}
+.outlined-button:active::before {
+  transition: 0s;
+  opacity: 0.4;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.text-button {
+  display: lnline-flex;
+  position: relative;
+  overflow: hidden;
+  color: #673ab7;
+  background: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.4rem;
+  box-shadow: none;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.text-button:enabled:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.text-button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.text-button:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.text-button:disabled {
+  background-color: #bdbdbd;
+  color: text-contrast(#bdbdbd);
+}
+.text-button span {
+  margin: 0.2rem;
+}
+.text-button i {
+  margin: 0.2rem;
+}
+.text-button::before {
+  content: "";
+  position: absolute;
+  padding: 50%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  transition: transform 0.75s, opacity 0.75s;
+}
+.text-button:active::before {
+  transition: 0s;
+  opacity: 0.4;
+  transform: translate(-50%, -50%) scale(0);
+}

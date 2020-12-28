@@ -1,0 +1,4 @@
+.button {
+    @include button($box-shadow: $shadow);
+    @include repple-effect($primary);
+}

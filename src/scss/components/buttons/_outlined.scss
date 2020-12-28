@@ -1,0 +1,12 @@
+.outlined-button {
+    @include button(
+        $background: $white,
+        $color: $primary,
+        $border: solid 0.1rem $primary
+    );
+    &:disabled {
+        border: none;
+    }
+
+    @include repple-effect;
+}

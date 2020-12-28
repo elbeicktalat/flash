@@ -1,0 +1,63 @@
+@mixin button(
+    $display: lnline-flex,
+    $position: relative,
+    $overflow: hidden,
+    $background: $primary,
+    $color: colorContrast($background),
+    $font-size: $font-size,
+    $font-weight: $font-weight-medium,
+    $font-family: $font-family,
+    $letter-spacing: $letter-spacing,
+    $text-align: center,
+    $outline: none,
+    $border: none,
+    $border-radius: $border-radius,
+    $padding: $button-padding,
+    $box-shadow: none,
+    $align-items: center,
+    $width: fit-content,
+    $height: fit-content
+) {
+    display: $display;
+    position: $position;
+    overflow: $overflow;
+    color: $color;
+    background: $background;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    letter-spacing: $letter-spacing;
+    text-align: $text-align;
+    outline: $outline;
+    border: $border;
+    border-radius: $border-radius;
+    padding: $padding;
+    box-shadow: $box-shadow;
+    align-items: $align-items;
+    width: $width;
+    height: $height;
+
+    &:enabled {
+        &:hover {
+            box-shadow: $shadow-hover;
+        }
+    }
+    &:active {
+        box-shadow: $shadow-active;
+    }
+    &:focus {
+        box-shadow: $shadow-focus;
+    }
+    &:disabled {
+        background-color: $gray400;
+        color: text-contrast($gray400);
+    }
+
+    //in case button has icon
+    span {
+        margin: 0.2rem;
+    }
+    i {
+        margin: 0.2rem;
+    }
+}

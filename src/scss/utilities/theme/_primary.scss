@@ -1,0 +1,52 @@
+/*
+The color system according material.io, for more info visit: 
+https://material.io/design/color/the-color-system.html#color-theme-creation
+Primary color
+A primary color is the color displayed most frequently across your app's screens and components.
+Dark and light primary variants
+Your primary color can be used to make a color theme for your app,
+including dark and light primary color variants.
+On Primery 
+“On” colors are primarily applied to text, iconography, and strokes.
+*/
+
+$primary: $deepPurple500;
+$primary-dark: $deepPurple;
+$primary-light: $deepPurple200;
+
+/*
+Secondary color
+A secondary color provides more ways to accent and distinguish your product.
+Having a secondary color is optional, and should be applied sparingly to accent...
+Dark and light secondary variants
+Just like the primary color, your secondary color can have dark and light variants.
+A color theme can use your primary color, secondary color, and dark and light variants of each color.
+On secondary 
+“On” colors are primarily applied to text, iconography, and strokes.
+*/
+$secondary: $teal500;
+$secondary-dark: $teal;
+$secondary-light: $teal200;
+
+/*
+The background color appears behind scrollable content.
+On background 
+“On” colors are primarily applied to text, iconography, and strokes.
+if your surface color is red it's meaningless the same color for a content.
+*/
+$background: $white;
+
+/*
+Surface colors affect surfaces of components,
+such as cards, sheets, and menus.
+As other On background 
+“On” colors are primarily applied to text, iconography, and strokes.
+if your surface color is red it's meaningless the same color for a content.
+*/
+$surface: $white;
+
+$error: $red;
+
+$alert: $orange;
+
+$done: $green;
