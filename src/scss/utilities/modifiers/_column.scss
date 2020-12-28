@@ -1,0 +1,20 @@
+$class-name: 'col' !default;
+
+$sizes: (
+    'sm': $sm,
+    'md': $md,
+    'lg': $lg,
+    'xl': $xl,
+    'xxl': $xxl,
+);
+
+@each $mark, $size in $sizes {
+    @include mediaQuery($size) {
+        @for $var from 1 through 10 {
+            .#{$class-name}-#{$mark}-#{$var} {
+                flex: 0.1 * $var !important;
+                width: 10% * $var !important;
+            }
+        }
+    }
+}
