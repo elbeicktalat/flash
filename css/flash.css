@@ -414,7 +414,6 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .button {
-  display: inline-flex;
   position: relative;
   overflow: hidden;
   color: white;
@@ -426,12 +425,10 @@ if your surface color is red it's meaningless the same color for a content.
   text-align: center;
   outline: none;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   padding: 0.6rem 1.4rem;
   box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
   align-items: center;
-  width: fit-content;
-  height: fit-content;
 }
 
 .button:enabled:hover {
@@ -452,11 +449,11 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .button span {
-  margin: 0.2rem;
+  margin: 0 0.2rem;
 }
 
 .button i {
-  margin: 0.2rem;
+  margin: 0 0.2rem;
 }
 
 .button::before {
@@ -479,7 +476,6 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .outlined-button {
-  display: inline-flex;
   position: relative;
   overflow: hidden;
   color: #673ab7;
@@ -491,12 +487,10 @@ if your surface color is red it's meaningless the same color for a content.
   text-align: center;
   outline: none;
   border: solid 0.1rem #673ab7;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   padding: 0.6rem 1.4rem;
   box-shadow: none;
   align-items: center;
-  width: fit-content;
-  height: fit-content;
 }
 
 .outlined-button:enabled:hover {
@@ -517,11 +511,11 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .outlined-button span {
-  margin: 0.2rem;
+  margin: 0 0.2rem;
 }
 
 .outlined-button i {
-  margin: 0.2rem;
+  margin: 0 0.2rem;
 }
 
 .outlined-button:disabled {
@@ -548,7 +542,6 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .text-button {
-  display: inline-flex;
   position: relative;
   overflow: hidden;
   color: #673ab7;
@@ -560,12 +553,10 @@ if your surface color is red it's meaningless the same color for a content.
   text-align: center;
   outline: none;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   padding: 0.6rem 1.4rem;
   box-shadow: none;
   align-items: center;
-  width: fit-content;
-  height: fit-content;
 }
 
 .text-button:enabled:hover {
@@ -586,11 +577,11 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .text-button span {
-  margin: 0.2rem;
+  margin: 0 0.2rem;
 }
 
 .text-button i {
-  margin: 0.2rem;
+  margin: 0 0.2rem;
 }
 
 .text-button::before {

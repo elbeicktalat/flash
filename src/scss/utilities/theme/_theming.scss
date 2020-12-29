@@ -1,0 +1,7 @@
+@mixin theming(
+    $background: $primary,
+    $color: $on-primary
+) {
+    background: $background !important;
+    color: $color !important;
+}

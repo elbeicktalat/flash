@@ -13,6 +13,7 @@ On Primery
 $primary: $deepPurple500;
 $primary-dark: $deepPurple;
 $primary-light: $deepPurple200;
+$on-primary: colorContrast($primary);
 
 /*
 Secondary color

@@ -1,5 +1,4 @@
 @mixin button(
-    $display: inline-flex,
     $position: relative,
     $overflow: hidden,
     $background: $primary,
@@ -15,10 +14,8 @@
     $padding: $button-padding,
     $box-shadow: none,
     $align-items: center,
-    $width: fit-content,
-    $height: fit-content
+    
 ) {
-    display: $display;
     position: $position;
     overflow: $overflow;
     color: $color;
@@ -34,9 +31,7 @@
     padding: $padding;
     box-shadow: $box-shadow;
     align-items: $align-items;
-    width: $width;
-    height: $height;
-
+    
     &:enabled {
         &:hover {
             box-shadow: $shadow-hover;
@@ -55,9 +50,9 @@
 
     //in case button has icon
     span {
-        margin: 0.2rem;
+        margin: 0 0.2rem;
     }
     i {
-        margin: 0.2rem;
+        margin: 0 0.2rem;
     }
 }
