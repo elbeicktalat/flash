@@ -1,9 +1,9 @@
-@mixin repple-effect($color: white) {
+@mixin reppleEffect($color: white) {
     &::before {
         content: '';
         position: absolute;
-        padding: 50%;
-        border-radius: 50%;
+        padding: 100%;
+        border-radius: 100%;
         background-color: colorContrast($color);
         left: 50%;
         top: 50%;
@@ -13,7 +13,7 @@
     }
     &:active::before {
         transition: 0s;
-        opacity: 0.4;
+        opacity: 0.8;
         transform: translate(-50%, -50%) scale(0);
     }
 }

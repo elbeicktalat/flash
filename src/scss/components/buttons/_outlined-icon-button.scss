@@ -1,0 +1,16 @@
+.outlined-icon-button {
+    @include button(
+        $width: 3.5rem,
+        $height: 3.5rem,
+        $border: solid $border $primary,
+        $color: $primary,
+        $border-radius: 100%,
+        $display: inline-flex,
+        $justify-content: center,
+        $align-items: center
+    );
+    @include reppleEffect(transparent);
+    &:disabled {
+        border: none;
+    }
+}

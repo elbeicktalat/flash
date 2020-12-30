@@ -1,7 +1,15 @@
+//Theming takes two parameters and set his value without any editing.
 @mixin theming(
     $background: $primary,
     $color: $on-primary
 ) {
     background: $background !important;
     color: $color !important;
+}
+
+//smart color take one parameter and set his value to background.
+@mixin smartColor($color) {
+    background: $color;
+    //Calculate the color luminance. If light give black color, else give with
+    color: colorContrast($color);
 }

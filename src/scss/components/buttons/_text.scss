@@ -1,8 +1,7 @@
 .text-button {
     @include button(
-        $background: none,
         $color: $primary
     );
 
-    @include repple-effect;
+    @include reppleEffect;
 }
