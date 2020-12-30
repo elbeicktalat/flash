@@ -1,4 +1,13 @@
 .button {
-    @include button($box-shadow: $shadow);
-    @include repple-effect($primary);
+    @include button(
+        $box-shadow: $shadow,
+        $background: $primary
+    );
+
+    @include reppleEffect($primary-light);
+    &:enabled {
+        &:hover {
+            @include smartColor($primary-light);
+        }
+    }
 }

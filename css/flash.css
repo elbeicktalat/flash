@@ -422,13 +422,11 @@ if your surface color is red it's meaningless the same color for a content.
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
-  text-align: center;
   outline: none;
   border: none;
   border-radius: 0.3rem;
   padding: 0.6rem 1.4rem;
   box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
-  align-items: center;
 }
 
 .button:enabled:hover {
@@ -444,24 +442,16 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .button:disabled {
-  background-color: #bdbdbd;
-  color: text-contrast(#bdbdbd);
-}
-
-.button span {
-  margin: 0 0.2rem;
-}
-
-.button i {
-  margin: 0 0.2rem;
+  background: #bdbdbd;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .button::before {
   content: '';
   position: absolute;
-  padding: 50%;
-  border-radius: 50%;
-  background-color: white;
+  padding: 100%;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -471,26 +461,28 @@ if your surface color is red it's meaningless the same color for a content.
 
 .button:active::before {
   transition: 0s;
-  opacity: 0.4;
+  opacity: 0.8;
   transform: translate(-50%, -50%) scale(0);
+}
+
+.button:enabled:hover {
+  background: #7e57c2;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .outlined-button {
   position: relative;
   overflow: hidden;
   color: #673ab7;
-  background: white;
+  background: transparent;
   font-size: 1rem;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
-  text-align: center;
   outline: none;
-  border: solid 0.1rem #673ab7;
+  border: solid 0.12rem #673ab7;
   border-radius: 0.3rem;
   padding: 0.6rem 1.4rem;
-  box-shadow: none;
-  align-items: center;
 }
 
 .outlined-button:enabled:hover {
@@ -506,16 +498,8 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .outlined-button:disabled {
-  background-color: #bdbdbd;
-  color: text-contrast(#bdbdbd);
-}
-
-.outlined-button span {
-  margin: 0 0.2rem;
-}
-
-.outlined-button i {
-  margin: 0 0.2rem;
+  background: #bdbdbd;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .outlined-button:disabled {
@@ -525,8 +509,8 @@ if your surface color is red it's meaningless the same color for a content.
 .outlined-button::before {
   content: '';
   position: absolute;
-  padding: 50%;
-  border-radius: 50%;
+  padding: 100%;
+  border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   left: 50%;
   top: 50%;
@@ -537,7 +521,7 @@ if your surface color is red it's meaningless the same color for a content.
 
 .outlined-button:active::before {
   transition: 0s;
-  opacity: 0.4;
+  opacity: 0.8;
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -545,18 +529,15 @@ if your surface color is red it's meaningless the same color for a content.
   position: relative;
   overflow: hidden;
   color: #673ab7;
-  background: none;
+  background: transparent;
   font-size: 1rem;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
-  text-align: center;
   outline: none;
   border: none;
   border-radius: 0.3rem;
   padding: 0.6rem 1.4rem;
-  box-shadow: none;
-  align-items: center;
 }
 
 .text-button:enabled:hover {
@@ -572,23 +553,15 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .text-button:disabled {
-  background-color: #bdbdbd;
-  color: text-contrast(#bdbdbd);
-}
-
-.text-button span {
-  margin: 0 0.2rem;
-}
-
-.text-button i {
-  margin: 0 0.2rem;
+  background: #bdbdbd;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .text-button::before {
   content: '';
   position: absolute;
-  padding: 50%;
-  border-radius: 50%;
+  padding: 100%;
+  border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   left: 50%;
   top: 50%;
@@ -599,8 +572,129 @@ if your surface color is red it's meaningless the same color for a content.
 
 .text-button:active::before {
   transition: 0s;
-  opacity: 0.4;
+  opacity: 0.8;
   transform: translate(-50%, -50%) scale(0);
+}
+
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background: #673ab7;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  padding: 0.6rem 1.4rem;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.icon-button:enabled:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.icon-button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.icon-button:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.icon-button:disabled {
+  background: #bdbdbd;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.icon-button:enabled:hover {
+  background: #7e57c2;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.icon-button:enabled:hover::before {
+  content: '';
+  position: absolute;
+  padding: 100%;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  transition: transform 0.75s, opacity 0.75s;
+}
+
+.icon-button:enabled:hover:active::before {
+  transition: 0s;
+  opacity: 0.8;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.outlined-icon-button {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: #673ab7;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  outline: none;
+  border: solid 0.12rem #673ab7;
+  border-radius: 100%;
+  padding: 0.6rem 1.4rem;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.outlined-icon-button:enabled:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.outlined-icon-button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.outlined-icon-button:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.outlined-icon-button:disabled {
+  background: #bdbdbd;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.outlined-icon-button::before {
+  content: '';
+  position: absolute;
+  padding: 100%;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  transition: transform 0.75s, opacity 0.75s;
+}
+
+.outlined-icon-button:active::before {
+  transition: 0s;
+  opacity: 0.8;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.outlined-icon-button:disabled {
+  border: none;
 }
 
 /*# sourceMappingURL=flash.css.map */

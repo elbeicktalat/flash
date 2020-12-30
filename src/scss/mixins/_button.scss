@@ -1,21 +1,26 @@
 @mixin button(
+    $display: unquote(''),
+    $justify-content: unquote(''),
     $position: relative,
     $overflow: hidden,
-    $background: $primary,
+    $background: transparent,
     $color: colorContrast($background),
     $font-size: $font-size,
     $font-weight: $font-weight-medium,
     $font-family: $font-family,
     $letter-spacing: $letter-spacing,
-    $text-align: center,
+    $text-align: unquote(''),
     $outline: none,
     $border: none,
     $border-radius: $border-radius,
     $padding: $button-padding,
-    $box-shadow: none,
-    $align-items: center,
-    
+    $box-shadow: unquote(''),
+    $align-items: unquote(''),
+    $width: unquote(''),
+    $height: unquote('')
 ) {
+    display: $display;
+    justify-content: $justify-content;
     position: $position;
     overflow: $overflow;
     color: $color;
@@ -31,7 +36,8 @@
     padding: $padding;
     box-shadow: $box-shadow;
     align-items: $align-items;
-    
+    width: $width;
+    height: $height;
     &:enabled {
         &:hover {
             box-shadow: $shadow-hover;
@@ -44,15 +50,6 @@
         box-shadow: $shadow-focus;
     }
     &:disabled {
-        background-color: $gray400;
-        color: text-contrast($gray400);
-    }
-
-    //in case button has icon
-    span {
-        margin: 0 0.2rem;
-    }
-    i {
-        margin: 0 0.2rem;
+        @include smartColor($gray400);
     }
 }
