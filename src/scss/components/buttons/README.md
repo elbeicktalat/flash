@@ -21,7 +21,7 @@ npm install flash-css
 @import 'src/scss/components/buttons/index';
 ```
 
-## Contained button
+## Button
 
 <img src="images/button.png" alt="Button example">
 
@@ -128,7 +128,9 @@ The following example shows text, Button, and outlined button types with Theming
 
 ### Theming with Sass variables
 
-You have to way to theming a button you can passing the data to the button mixin by including it or you can use the **theming** **smartColor**.
+You have two way to theming a button you can passing property to the button mixin by including it or you can use **theming** or **smartColor**.
+
+In the following line you can understand the difference between those two.
 
 ```scss
 //Theming takes two parameters and set his value without any editing.
