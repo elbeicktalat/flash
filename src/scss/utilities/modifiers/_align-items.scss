@@ -1,24 +1,16 @@
-.align-items-baseline {
-    align-items: baseline !important;
-}
-.align-items-center {
-    align-items: center !important;
-}
-.align-items-flex-end {
-    align-items: flex-end !important;
-}
-.align-items-flex-start {
-    align-items: flex-start !important;
-}
-.align-items-stretch {
-    align-items: stretch !important;
-}
-.align-items-inherit {
-    align-items: inherit !important;
-}
-.align-items-initial {
-    align-items: initial !important;
-}
-.align-items-unset {
-    align-items: unset !important;
+$propertys: (
+    'baseline': baseline,
+    'center': center,
+    'end': flex-end,
+    'start': flex-start,
+    'stretch': stretch,
+    'inherit': inherit,
+    'initial': initial,
+    'unset': unset,
+);
+
+@each $propertyName, $property in $propertys {
+    .#{align-items}-#{$propertyName} {
+        align-items: $property !important;
+    }
 }

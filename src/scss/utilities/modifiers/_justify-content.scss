@@ -1,0 +1,14 @@
+$propertys: (
+    'start': flex-start,
+    'end': flex-end,
+    'center': center,
+    'between': space-between,
+    'around': space-around,
+    'evenly': space-evenly,
+);
+
+@each $propertyName, $property in $propertys {
+    .#{j-content}-#{$propertyName} {
+        justify-content: $property !important;
+    }
+}
