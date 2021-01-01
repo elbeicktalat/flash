@@ -1,0 +1,15 @@
+@mixin avatar(
+    $size: 40px,
+    $color: $gray400,
+    $border-radius: 100%,
+    $border: unquote('')
+) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: $size;
+    height: $size;
+    border-radius: $border-radius;
+    border: $border;
+    @include smartColor($color);
+}
