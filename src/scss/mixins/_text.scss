@@ -1,0 +1,13 @@
+@mixin text(
+    $size: unquote(''),
+    $weight: unquote(''),
+    $family: unquote(''),
+    $style: unquote(''),
+    $align: unquote('')
+) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+    font-style: $style;
+    text-align: $align;
+}
