@@ -1,72 +1,19 @@
-.d-block {
-    display: block !important;
-}
-.d-contents {
-    display: contents !important;
-}
-.d-flex {
-    display: flex !important;
-}
-.d-grid {
-    display: grid !important;
-}
-.d-inline {
-    display: inline !important;
-}
-.d-inherit {
-    display: inherit !important;
-}
-.d-inline-block {
-    display: inline-block !important;
-}
-.d-inline-flex {
-    display: inline-flex !important;
-}
-.d-inline-tab {
-    display: inline-table !important;
-}
-.d-list-item {
-    display: list-item !important;
-}
-.d-none {
-    display: none !important;
-}
-.d-tab {
-    display: table !important;
-}
-.d-tab-caption {
-    display: table-caption !important;
-}
-.d-tab-cell {
-    display: table-cell !important;
-}
-.d-tab-col {
-    display: table-column !important;
-}
-.d-tab-col-group {
-    display: table-column-group !important;
-}
-.d-tab-header-group {
-    display: table-header-group !important;
-}
-.d-tab-footer-group {
-    display: table-footer-group !important;
-}
-.d-tab-row {
-    display: table-row !important;
-}
-.d-tab-row-group {
-    display: table-row-group !important;
-}
-.d-webkit-box {
-    display: -webkit-box !important;
-}
-.d-webkit-flex {
-    display: -webkit-flex !important;
-}
-.d-webkit-inline-box {
-    display: -webkit-inline-box !important;
-}
-.d-webkit-inline-flex {
-    display: -webkit-inline-flex !important;
+$propertys: (
+    'block ': block,
+    'inline ': inline,
+    'flex ': flex,
+    'grid ': grid,
+    'inline-block ': inline-block,
+    'inline-flex ': inline-flex,
+    'inline-table ': inline-table,
+    'none ': none,
+    'table ': table,
+    'table-row ': table-row,
+    'table-cell ': table-cell,
+);
+
+@each $propertyName, $property in $propertys {
+    .#{d}-#{$propertyName} {
+        display: $property !important;
+    }
 }

@@ -1,0 +1,15 @@
+$propertys: (
+    'column': column,
+    'column-reverse': column-reverse,
+    'row': row,
+    'row-reverse': row-reverse,
+    'inherit': inherit,
+    'initial': initial,
+    'unset': unset,
+);
+
+@each $propertyName, $property in $propertys {
+    .#{flex-direction}-#{$propertyName} {
+        flex-direction: $property !important;
+    }
+}

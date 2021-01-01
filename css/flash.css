@@ -38,8 +38,8 @@ if your surface color is red it's meaningless the same color for a content.
   display: block !important;
 }
 
-.d-contents {
-  display: contents !important;
+.d-inline {
+  display: inline !important;
 }
 
 .d-flex {
@@ -50,14 +50,6 @@ if your surface color is red it's meaningless the same color for a content.
   display: grid !important;
 }
 
-.d-inline {
-  display: inline !important;
-}
-
-.d-inherit {
-  display: inherit !important;
-}
-
 .d-inline-block {
   display: inline-block !important;
 }
@@ -66,104 +58,48 @@ if your surface color is red it's meaningless the same color for a content.
   display: inline-flex !important;
 }
 
-.d-inline-tab {
+.d-inline-table {
   display: inline-table !important;
-}
-
-.d-list-item {
-  display: list-item !important;
 }
 
 .d-none {
   display: none !important;
 }
 
-.d-tab {
+.d-table {
   display: table !important;
 }
 
-.d-tab-caption {
-  display: table-caption !important;
-}
-
-.d-tab-cell {
-  display: table-cell !important;
-}
-
-.d-tab-col {
-  display: table-column !important;
-}
-
-.d-tab-col-group {
-  display: table-column-group !important;
-}
-
-.d-tab-header-group {
-  display: table-header-group !important;
-}
-
-.d-tab-footer-group {
-  display: table-footer-group !important;
-}
-
-.d-tab-row {
+.d-table-row {
   display: table-row !important;
 }
 
-.d-tab-row-group {
-  display: table-row-group !important;
+.d-table-cell {
+  display: table-cell !important;
 }
 
-.d-webkit-box {
-  display: -webkit-box !important;
-}
-
-.d-webkit-flex {
-  display: -webkit-flex !important;
-}
-
-.d-webkit-inline-box {
-  display: -webkit-inline-box !important;
-}
-
-.d-webkit-inline-flex {
-  display: -webkit-inline-flex !important;
-}
-
-.align-cont-center {
+.align-content-center {
   align-content: center !important;
 }
 
-.align-cont-flex-end {
+.align-content-end {
   align-content: flex-end !important;
 }
 
-.align-cont-flex-start {
+.align-content-start {
   align-content: flex-start !important;
 }
 
-.align-con-space-around {
+.align-content-around {
   align-content: space-around !important;
 }
 
-.align-cont-space-between {
+.align-content-between {
   align-content: space-between !important;
 }
 
-.align-cont-stretch {
+.align-content-stretch {
   align-content: stretch !important;
-}
-
-.align-cont-inherit {
-  align-content: inherit !important;
-}
-
-.align-cont-initial {
-  align-content: initial !important;
-}
-
-.align-cont-unset {
-  align-content: unset !important;
 }
 
 .align-items-baseline {
@@ -174,11 +110,11 @@ if your surface color is red it's meaningless the same color for a content.
   align-items: center !important;
 }
 
-.align-items-flex-end {
+.align-items-end {
   align-items: flex-end !important;
 }
 
-.align-items-flex-start {
+.align-items-start {
   align-items: flex-start !important;
 }
 
@@ -411,6 +347,58 @@ if your surface color is red it's meaningless the same color for a content.
     flex: 1 !important;
     width: 100% !important;
   }
+}
+
+.flex-direction-column {
+  flex-direction: column !important;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+.flex-direction-row {
+  flex-direction: row !important;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.flex-direction-inherit {
+  flex-direction: inherit !important;
+}
+
+.flex-direction-initial {
+  flex-direction: initial !important;
+}
+
+.flex-direction-unset {
+  flex-direction: unset !important;
+}
+
+.j-content-start {
+  justify-content: flex-start !important;
+}
+
+.j-content-end {
+  justify-content: flex-end !important;
+}
+
+.j-content-center {
+  justify-content: center !important;
+}
+
+.j-content-between {
+  justify-content: space-between !important;
+}
+
+.j-content-around {
+  justify-content: space-around !important;
+}
+
+.j-content-evenly {
+  justify-content: space-evenly !important;
 }
 
 .button {
