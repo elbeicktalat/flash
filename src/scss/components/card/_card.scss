@@ -1,0 +1,60 @@
+$_border-radius: 0.5rem;
+$_color: $white;
+$_padding: 0.4rem 0.8rem;
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    @include smartColor($_color);
+    width: 300px;
+    border-radius: $_border-radius;
+    box-shadow: $shadow;
+    word-wrap: break-word;
+    .header {
+        display: flex;
+        padding: $_padding;
+        @include avatar;
+        align-items: center;
+        .text {
+            margin-left: 1rem;
+            .title {
+                @include text(
+                    $size: $title-font-size,
+                    $weight: $title-font-weight,
+                    $family: $font-family
+                );
+            }
+            .sub {
+                @include text(
+                    $size: $sub-font-size,
+                    $family: $font-family
+                );
+            }
+        }
+    }
+    .media {
+        * {
+            width: 100%;
+            height: 100%;
+        }
+        &:first-child {
+            * {
+                border-radius: $_border-radius
+                    $_border-radius 0 0;
+            }
+        }
+    }
+    .footer {
+        padding: $_padding;
+        .text {
+            @include text(
+                $size: $font-size,
+                $family: $font-family,
+                $weight: $font-weight-medium
+            );
+        }
+        .actions {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

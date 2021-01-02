@@ -685,4 +685,70 @@ if your surface color is red it's meaningless the same color for a content.
   border: none;
 }
 
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  background: white;
+  color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+  word-wrap: break-word;
+}
+
+.card .header {
+  display: flex;
+  padding: 0.4rem 0.8rem;
+  align-items: center;
+}
+
+.card .header .avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #bdbdbd;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.card .header .text {
+  margin-left: 1rem;
+}
+
+.card .header .text .title {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.card .header .text .sub {
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.card .media * {
+  width: 100%;
+  height: 100%;
+}
+
+.card .media:first-child * {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card .footer {
+  padding: 0.4rem 0.8rem;
+}
+
+.card .footer .text {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.card .footer .actions {
+  margin-bottom: 0.5rem;
+}
+
 /*# sourceMappingURL=flash.css.map */
