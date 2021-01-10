@@ -9,7 +9,7 @@
 		"../src/scss/utilities/_colors.scss",
 		"../src/scss/utilities/_variables.scss",
 		"../src/scss/utilities/theme/_primary.scss",
-		"../src/scss/utilities/functions/_contrast.sass",
+		"../src/scss/utilities/functions/_contrast.scss",
 		"../src/scss/utilities/functions/_opposite-color.scss",
 		"../src/scss/utilities/_screens.scss",
 		"../src/scss/utilities/modifiers/_main.scss",
