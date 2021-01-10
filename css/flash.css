@@ -752,8 +752,8 @@ if your surface color is red it's meaningless the same color for a content.
 }
 
 .alert {
-  background: #673ab7;
-  color: white;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
   padding: 1.2rem;
   margin: 1rem 0;
   border-radius: 0.4rem;
@@ -828,6 +828,91 @@ if your surface color is red it's meaningless the same color for a content.
 
 .alert-done .alert-link {
   color: white;
+  font-weight: 900;
+}
+
+.alert-outlined {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: solid 0.2rem #673ab7;
+}
+
+.alert-outlined .alert-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+}
+
+.alert-outlined-secondary {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: solid 0.2rem #009688;
+}
+
+.alert-outlined-secondary .alert-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+}
+
+.alert-outlined-warning {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: solid 0.2rem #f57c00;
+}
+
+.alert-outlined-warning .alert-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+}
+
+.alert-outlined-error {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: solid 0.2rem #d32f2f;
+}
+
+.alert-outlined-error .alert-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+}
+
+.alert-outlined-done {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border: solid 0.2rem #388e3c;
+}
+
+.alert-outlined-done .alert-link {
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 900;
 }
 
