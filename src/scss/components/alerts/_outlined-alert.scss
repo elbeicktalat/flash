@@ -1,0 +1,15 @@
+.alert-outlined {
+    @include alert($border: solid 0.2rem $primary);
+}
+.alert-outlined-secondary {
+    @include alert($border: solid 0.2rem $secondary);
+}
+.alert-outlined-warning {
+    @include alert($border: solid 0.2rem $alert);
+}
+.alert-outlined-error {
+    @include alert($border: solid 0.2rem $error);
+}
+.alert-outlined-done {
+    @include alert($border: solid 0.2rem $done);
+}
