@@ -1,5 +1,5 @@
 //external url
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 
 //colors
 @import 'src/scss/utilities/colors';
@@ -12,6 +12,7 @@
 
 //functions
 @import 'src/scss/utilities/functions/contrast';
+@import 'src/scss/utilities/functions/opposite-color';
 
 //screens config
 @import 'src/scss/utilities/screens';

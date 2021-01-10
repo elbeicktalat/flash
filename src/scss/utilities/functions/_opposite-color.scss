@@ -1,0 +1,7 @@
+@function oppositeColor($color) {
+  @if (colorLuminance($color) > 0.2) {
+    @return $white;
+  } @else {
+    @return $black;
+  }
+}
