@@ -1,5 +1,5 @@
 .alert {
-    @include alert;
+    @include alert($color: $primary);
 }
 .alert-secondary {
     @include alert($color: $secondary);
