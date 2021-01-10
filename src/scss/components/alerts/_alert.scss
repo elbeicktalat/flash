@@ -1,0 +1,15 @@
+.alert {
+    @include alert;
+}
+.alert-secondary {
+    @include alert($color: $secondary);
+}
+.alert-warning {
+    @include alert($color: $alert);
+}
+.alert-error {
+    @include alert($color: $error);
+}
+.alert-done {
+    @include alert($color: $done);
+}
