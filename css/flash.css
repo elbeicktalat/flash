@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 /*
 The color system according material.io, for more info visit: 
 https://material.io/design/color/the-color-system.html#color-theme-creation
@@ -758,8 +758,13 @@ if your surface color is red it's meaningless the same color for a content.
   margin: 1rem 0;
   border-radius: 0.4rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1rem;
+}
+
+.alert .alert-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
 }
 
 .alert-secondary {
@@ -769,8 +774,13 @@ if your surface color is red it's meaningless the same color for a content.
   margin: 1rem 0;
   border-radius: 0.4rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1rem;
+}
+
+.alert-secondary .alert-link {
+  color: white;
+  font-weight: 900;
 }
 
 .alert-warning {
@@ -780,8 +790,13 @@ if your surface color is red it's meaningless the same color for a content.
   margin: 1rem 0;
   border-radius: 0.4rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1rem;
+}
+
+.alert-warning .alert-link {
+  color: white;
+  font-weight: 900;
 }
 
 .alert-error {
@@ -791,8 +806,13 @@ if your surface color is red it's meaningless the same color for a content.
   margin: 1rem 0;
   border-radius: 0.4rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1rem;
+}
+
+.alert-error .alert-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
 }
 
 .alert-done {
@@ -802,8 +822,13 @@ if your surface color is red it's meaningless the same color for a content.
   margin: 1rem 0;
   border-radius: 0.4rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1rem;
+}
+
+.alert-done .alert-link {
+  color: white;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=flash.css.map */
