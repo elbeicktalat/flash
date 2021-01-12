@@ -7,21 +7,15 @@ body {
 }
 .content {
     display: flex;
-    flex: 0.80;
+    flex: 0.8;
 }
 .sidebar {
     display: flex;
     flex-direction: column;
-    flex: 0.20;
+    flex: 0.2;
     background-color: #eeeeee;
 }
 .button {
     border-radius: 0;
     box-shadow: none;
-    background-color: #dddddd;
-    color: black;
-}
-.button:enabled:hover {
-    background-color: #eeeeee;
-    color: black;
 }
