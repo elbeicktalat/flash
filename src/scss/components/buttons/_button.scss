@@ -4,10 +4,11 @@
         $background: $primary
     );
 
-    @include reppleEffect($primary-light);
-    &:enabled {
-        &:hover {
-            @include smartColor($primary-light);
-        }
+    @include reppleEffect($primary-light);   
+    &:hover {
+        @include smartColor($primary-light);
+    }
+    &:disabled {
+        @include smartColor($gray400);
     }
 }

@@ -10,6 +10,7 @@
     $font-family: $font-family,
     $letter-spacing: $letter-spacing,
     $text-align: unquote(''),
+    $text-decoration: none,
     $outline: none,
     $border: none,
     $border-radius: $border-radius,
@@ -38,10 +39,9 @@
     align-items: $align-items;
     width: $width;
     height: $height;
-    &:enabled {
-        &:hover {
-            box-shadow: $shadow-hover;
-        }
+    text-decoration: $text-decoration;
+    &:hover {
+        box-shadow: $shadow-hover;
     }
     &:active {
         box-shadow: $shadow-active;
