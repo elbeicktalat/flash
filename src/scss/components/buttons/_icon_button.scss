@@ -8,11 +8,11 @@
         $justify-content: center,
         $align-items: center
     );
-
-    &:enabled {
-        &:hover {
-            @include smartColor($primary-light);
-            @include reppleEffect($primary-light);
-        }
+    &:hover {
+        @include smartColor($primary-light);
+        @include reppleEffect($primary-light);
+    }
+    &:disabled {
+        @include smartColor($gray400);
     }
 }
